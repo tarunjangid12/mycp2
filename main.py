@@ -429,7 +429,7 @@ async def account_login(bot: Client, m: Message):
                 #                         await m.reply_text(str(e))
                 #                         time.sleep(e.x)
                 #                         continue
-                if cmd == "pdf" or ".pdf" or "drive" in url or ".pdf" in name:
+                if cmd == "pdf" or ".pdf" in url or ".pdf" in name:
                     try:
                         ka = await helper.aio(url, name)
                         await prog.delete(True)

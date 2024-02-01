@@ -447,7 +447,7 @@ async def account_login(bot: Client, m: Message):
                         await reply.delete(True)
                         time.sleep(1)
                         os.remove(ka)
-                        time.sleep(3)
+                        time.sleep(90)
                     except FloodWait as e:
                         await m.reply_text(str(e))
                         time.sleep(e.x)
@@ -458,7 +458,7 @@ async def account_login(bot: Client, m: Message):
                     await helper.send_vid(bot, m, cc, filename, thumb, name,
                                           prog)
                     count += 1
-                    time.sleep(1)
+                    time.sleep(120)
 
             except Exception as e:
                 await m.reply_text(

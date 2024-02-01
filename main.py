@@ -213,7 +213,7 @@ async def account_login(bot: Client, m: Message):
         count = int(raw_text)
 
     try:
-        for i in range(arg, len(links)):
+        for i in range(arg - 1, len(links)):
 
             url = links[i][1]
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/","").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").strip()
